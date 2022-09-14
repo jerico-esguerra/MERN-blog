@@ -1,15 +1,41 @@
-# Memories
 
-![Memories](https://i.ibb.co/Z8Y0CJv/Screenshot-2020-10-30-at-11-10-04.png)
+# MERN Blog App
 
-## Introduction
-This is a code repository for the corresponding video tutorial - https://youtube.com/playlist?list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu.
+## Overview
+A full stack MERN blog application. Allows users to post events that happened in their lives or topics of interest.
 
-Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called "Memories" and it is a simple social media app that allows users to post interesting events that happened in their lives.
+## Key Topics
+Built using modern technologies:
 
-By the end of this video, you will have a strong understanding of how the MERN Stack works.
+* ReactJS
+* NodeJS
+* ExpressJS
+* MongoDB
+* Material UI
+* Google Auth
+* CRUD
 
-Setup:
-- run ```npm i && npm start``` for both client and server side to start the app
+## Features
+* Pagination
+* Search and Filtering Capabilities
+* Detailed Pages
+* Authentication
+* Comment and Save Post Functionality
 
-TODO: rename post message, refactor reducers, add some cool memories, maybe clickable tags, fix update functionality
+## Getting Started
+
+1. Clone this repository (e.g., using `create-react-app`)
+
+	`npx create-react-app -e https://github.com/jerico-esguerra/fitness-app project-name`
+
+2. Create .env file containing your own variables (reference **.env.example**)
+3. Run locally: `npm run start`
+
+## Deployment
+
+1. A service like Hostinger can be used to deploy the client
+2. Heroku can be used to deploy the server.
+3. DEPLOY!
+
+- - -
+© 2023 Jerico Esguerra. All Rights Reserved.
