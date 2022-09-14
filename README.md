@@ -26,7 +26,7 @@ Built using modern technologies:
 
 1. Clone this repository (e.g., using `create-react-app`)
 
-	`npx create-react-app -e https://github.com/jerico-esguerra/fitness-app project-name`
+	`npx create-react-app -e https://github.com/jerico-esguerra/MERN-blog project-name`
 
 2. Create .env file containing your own variables (reference **.env.example**)
 3. Run locally: `npm run start`
