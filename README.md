@@ -35,7 +35,6 @@ Built using modern technologies:
 
 1. A service like Hostinger can be used to deploy the client
 2. Heroku can be used to deploy the server.
-3. DEPLOY!
 
 - - -
 © 2023 Jerico Esguerra. All Rights Reserved.
