@@ -16,10 +16,6 @@ const Navbar = () => {
   const history = useHistory();
   const classes = useStyles();
 
-  const saveMe = () => {
-    console.log("hello");
-  }
-
   const logout = () => {
     dispatch({ type: actionType.LOGOUT });
 
@@ -51,7 +47,7 @@ const Navbar = () => {
           <div className={classes.profile}>
             <Link to="/savedPosts">
             {console.log(user.result)}
-              <Avatar className={classes.purple} alt={user?.result?.name} src={user?.result?.picture} onClick={saveMe}>{Array.from(user?.result?.name)[0] || user?.result?.name.charAt(0) }</Avatar>
+              <Avatar className={classes.purple} alt={user?.result?.name} src={user?.result?.picture}>{Array.from(user?.result?.name)[0] || user?.result?.name.charAt(0) }</Avatar>
             </Link>
             <Typography className={classes.userName} variant="h6">{user?.result?.name}</Typography>
             <Button variant="contained" className={classes.logout} color="secondary" onClick={logout}>Logout</Button>

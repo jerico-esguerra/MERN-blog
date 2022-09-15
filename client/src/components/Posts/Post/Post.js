@@ -25,9 +25,6 @@ const Post = ({ post, setCurrentId }) => {
   const hasLikedPost = post?.likes?.find((like) => like === userId);
   const hasSavedPost = post?.saved?.find((save) => save === userId);
 
-console.log(hasLikedPost);
-console.log(hasSavedPost)
-
   const handleLike = async () => {
     dispatch(likePost(post?._id));
 

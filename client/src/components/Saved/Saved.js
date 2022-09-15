@@ -10,8 +10,7 @@ const Saved = ({ setCurrentId }) => {
   const user = JSON.parse(localStorage.getItem('profile'));
   const userId = user?.result?._id || user?.result?.sub;
   const classes = useStyles();
-  console.log(posts);
-  const noice = [];
+  const savedPosts = [];
 
   if ((!posts.length && !isLoading)) return 'No posts';
 
@@ -19,14 +18,13 @@ const Saved = ({ setCurrentId }) => {
     const hasSavedPost = posts[i]?.saved?.find((save) => save === (userId));
     console.log(hasSavedPost)
     if(hasSavedPost){
-        noice.push(posts[i]);
-        console.log(noice);
+        savedPosts.push(posts[i]);
     }
   }
     return (
         isLoading ? <CircularProgress /> : (
           <Grid className={classes.container} container alignItems="stretch" spacing={3}>
-            {noice.map((post) => (
+            {savedPosts.map((post) => (
               <Grid key={post?._id} item xs={12} sm={12} md={6} lg={3}>
                 <SavedPost post={post} setCurrentId={setCurrentId} />
               </Grid>

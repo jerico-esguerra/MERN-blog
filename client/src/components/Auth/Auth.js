@@ -80,20 +80,20 @@ const SignUp = () => {
           <Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit}>
             { isSignup ? 'Sign Up' : 'Sign In' }
           </Button>
-          <div>
-          {user ? (<div>Logged In</div>) : (
-          <GoogleLogin
-          onSuccess={(response) => googleSuccess(response)}
-          onError={() => console.log('Error')}
-          /> )}
-          </div>
-          <Grid container justify="flex-end">
+          <Grid container style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '16px', border: 'solid black'}}>
             <Grid item>
               <Button onClick={switchMode}>
                 { isSignup ? 'Already have an account? Sign in' : "Don't have an account? Sign Up" }
               </Button>
             </Grid>
           </Grid>
+          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '16px' }}>
+          {user ? (<div>Logged In</div>) : (
+          <GoogleLogin
+          onSuccess={(response) => googleSuccess(response)}
+          onError={() => console.log('Error')}
+          /> )}
+          </div>
         </form>
       </Paper>
     </Container>
