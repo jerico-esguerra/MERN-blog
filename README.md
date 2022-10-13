@@ -33,7 +33,7 @@ Built using modern technologies:
 
 ## Deployment
 
-1. A service like Hostinger can be used to deploy the client
-2. Heroku can be used to deploy the server.
+1. A service like Netlify can be used to deploy the client
+2. ~~Heroku~~ Render can be used to deploy the server.
 
 © 2023 Jerico Esguerra. All Rights Reserved.
